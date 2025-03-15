@@ -4,23 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>protfoilio</title>
-    <link rel="icon" href="">
+    <link rel="icon" href="images/logo/photo_2025.png">
     <link rel="stylesheet" href="style/main.css">
 </head>
-<body>
+<body class="bg-gray-800">
+    <svg class="hidden">
+        <symbol id="bars" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+        </symbol>   
+        <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+        </symbol>
+    </svg>
 
 
-    <header>
-        <div class="w-[90%] h-24 mx-auto bg-gray-700/50">
 
+    <header class="hidden lg:block">
+        <div class="flex items-center justify-between w-[90%] h-24 mx-auto px-12 py-6 bg-gray-700/50 rounded-b-2xl">
+            <div>
+                <span class="text-3xl font-serif text-emerald-400/50">Mohamwad</span>
+            </div>
+            <div class="flex gap-x-20 *:text-xl text-white">
+                <div>
+                    <ul class="flex gap-x-9 *:hover:text-orange-300 cursor-pointer *:transition *:delay-75 *:duration-150 *:ease-in ">
+                        <li><span class="text-orange-400">H</span><span class="text-orange-300">o</span>me</li>
+                        <li><span class="text-orange-400">C</span><span class="text-orange-300">o</span>ntacts</li>
+                        <li><span class="text-orange-400">W</span><span class="text-orange-300">o</span>rks</li>
+                        <li><span class="text-orange-400">A</span><span class="text-orange-300">b</span>out Me</li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-0.5">
+                    <p class="text-orange-300 text-lg">EN</p>
+                    <svg class="size-5 text-orange-400">
+                        <use href="#arrow-down"></use>
+                    </svg>
+                </div>
+            </div> 
         </div>
     </header>
     
 
 
 
+    <!-- particles -->
+    <div id="particles-js" class="fixed top-24 w-full h-260 md:h-400 -z-40"></div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/core.js"></script>
+    <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
