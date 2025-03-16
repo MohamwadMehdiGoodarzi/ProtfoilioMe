@@ -40,6 +40,7 @@
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+    --aspect-video: 16 / 9;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -510,6 +511,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
   .size-5 {
     width: calc(var(--spacing) * 5);
     height: calc(var(--spacing) * 5);
@@ -536,6 +540,9 @@
   }
   .h-64 {
     height: calc(var(--spacing) * 64);
+  }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
   }
   .h-260 {
     height: calc(var(--spacing) * 260);
@@ -2186,6 +2193,16 @@
   .md\:mt-24 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 24);
+    }
+  }
+  .md\:h-200 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 200);
+    }
+  }
+  .md\:h-250 {
+    @media (width >= 48rem) {
+      height: calc(var(--spacing) * 250);
     }
   }
   .md\:h-400 {
