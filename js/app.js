@@ -143,5 +143,3 @@ titleElemtypewriter.typeString('Hi There!')
 
 
 
-
-
