@@ -135,6 +135,8 @@ titleElemtypewriter.typeString('Hi There!')
 
 
 
+AOS.init();
+
 
 
 
